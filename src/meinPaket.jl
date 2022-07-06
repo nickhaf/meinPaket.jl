@@ -2,6 +2,14 @@ module meinPaket
     import Statistics.mean
     export sos
     #include("otherfile")
+    """
+    Predict new observations.
+
+    ## Arguments
+
+    - `y`: observed
+    """
+
     function sos(y, ŷ)  
         sum(@. (y - ŷ)^2) # vektorisierung durch @.
     end
